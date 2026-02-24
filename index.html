@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Elite Events | Premium Event Management</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+  <div id="app">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+      <div class="layout-container flex h-full grow flex-col">
+        <!-- Navigation -->
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 lg:px-20 py-4 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+          <div class="flex items-center gap-12">
+            <div class="flex items-center gap-3 text-primary">
+              <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+              <h2
+                class="text-slate-900 dark:text-slate-100 text-xl font-extrabold leading-tight tracking-tight uppercase">
+                Elite <span class="text-primary">Events</span></h2>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8">
+              <a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wider"
+                href="#">Home</a>
+              <a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wider"
+                href="#">Services</a>
+              <a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wider"
+                href="#">Portfolio</a>
+              <a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wider"
+                href="#">About</a>
+              <a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-semibold uppercase tracking-wider"
+                href="#">Contact</a>
+              <button id="theme-toggle" class="p-2 rounded-full hover:bg-primary/10 text-primary transition-all">
+                <span class="material-symbols-outlined theme-icon">dark_mode</span>
+              </button>
+            </nav>
+          </div>
+          <div class="flex flex-1 justify-end gap-6 items-center">
+            <div
+              class="hidden md:flex items-center bg-primary/5 dark:bg-primary/10 rounded-full px-4 py-2 border border-primary/10">
+              <span class="material-symbols-outlined text-primary text-xl mr-2">search</span>
+              <input
+                class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48 placeholder:text-slate-400 dark:text-white"
+                placeholder="Find an event..." type="text" />
+            </div>
+            <button
+              class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-primary/25 active:scale-95">
+              Get a Quote
+            </button>
+          </div>
+        </header>
+
+        <main class="flex-1">
+          <!-- Hero Section -->
+          <section class="relative h-[600px] lg:h-[750px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center"
+              style="background-image: linear-gradient(rgba(26, 16, 34, 0.6) 0%, rgba(26, 16, 34, 0.8) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDY6Fsub4gR6q6TORWqCZTPRyd42y6Gyh1vjafutPqd6nRYpnP9E8jJvcNOCFNnFRxmrYXCyRoX0NQH2JckkdLJLI8rO3nClVepiaTUWCesAy01TXnhZDkeNiQlyrBBjQHvqHAPv9R8xDpDB3jU9teSp1BMfxfAKVwW3YEgNe_IAU8IwN6vTTwP-Gq2TFOu60L36NqjmzCEDSgCX_5Xu6ndPPSshffmlaylnE1b5vZr3jUEhrIbeTfEwQTPGd2cEQLFXek0Sls3pf8');">
+            </div>
+            <div class="relative h-full flex flex-col items-center justify-center text-center px-6">
+              <span class="text-accent-gold font-bold tracking-[0.3em] uppercase mb-4 text-sm">Premium Event
+                Experiences</span>
+              <h1 class="text-white text-5xl lg:text-7xl font-black mb-6 max-w-4xl leading-[1.1]">
+                Turning Visions Into <span class="text-primary">Masterpieces</span>
+              </h1>
+              <p class="text-slate-200 text-lg lg:text-xl max-w-2xl mb-10 font-light">
+                Bespoke corporate galas, elegant weddings, and immersive cultural events tailored to your unique vision
+                and style.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <button
+                  class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg text-base font-bold transition-all flex items-center gap-2 group">
+                  Explore Our Portfolio <span
+                    class="material-symbols-outlined transition-transform group-hover:translate-x-1">trending_flat</span>
+                </button>
+                <button
+                  class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-lg text-base font-bold transition-all">
+                  View Services
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stats Section -->
+          <section class="max-w-7xl mx-auto px-6 -mt-16 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+              <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-xl border-b-4 border-primary flex flex-col items-center text-center hover:scale-105 transition-transform">
+                <span class="text-primary mb-2 material-symbols-outlined text-4xl">event_available</span>
+                <h3 class="text-3xl font-black text-slate-900 dark:text-white">1,200+</h3>
+                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Events Completed</p>
+              </div>
+              <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-xl border-b-4 border-accent-gold flex flex-col items-center text-center hover:scale-105 transition-transform">
+                <span class="text-accent-gold mb-2 material-symbols-outlined text-4xl">groups</span>
+                <h3 class="text-3xl font-black text-slate-900 dark:text-white">500+</h3>
+                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Clients Served</p>
+              </div>
+              <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-xl border-b-4 border-primary flex flex-col items-center text-center hover:scale-105 transition-transform">
+                <span class="text-primary mb-2 material-symbols-outlined text-4xl">public</span>
+                <h3 class="text-3xl font-black text-slate-900 dark:text-white">15+</h3>
+                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Global Locations</p>
+              </div>
+              <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-xl border-b-4 border-accent-gold flex flex-col items-center text-center hover:scale-105 transition-transform">
+                <span class="text-accent-gold mb-2 material-symbols-outlined text-4xl">workspace_premium</span>
+                <h3 class="text-3xl font-black text-slate-900 dark:text-white">25</h3>
+                <p class="text-slate-500 text-sm font-medium uppercase tracking-widest mt-1">Industry Awards</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Upcoming Events Section -->
+          <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="flex items-end justify-between mb-12">
+              <div>
+                <h2 class="text-slate-900 dark:text-white text-4xl font-black mb-4">Upcoming <span
+                    class="text-primary">Events</span></h2>
+                <p class="text-slate-500 max-w-lg">Don't miss out on our upcoming curated experiences. Reserve your spot
+                  for the most exclusive galas and summits.</p>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  class="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-primary hover:text-white transition-all">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button
+                  class="p-2 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-primary hover:text-white transition-all">
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex overflow-x-auto gap-8 pb-8 custom-scrollbar">
+              <!-- Card 1 -->
+              <div
+                class="min-w-[350px] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-56 relative overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC7_ms_S1eVgAgtlkcK_XlUzXw6Wd6Kgpcbl5C4DgYjvw32VXxh213ZTHsed0CS9p26xWX0K905_pNrxophpcuoOKoumiKfvWy9n8zMtGzYYzIpYFeI_4UNiCTlA7-W_XuR7XVsDp1qn60Q-Lc9qC9vBPM90Ya15PBgkCM4_uj3BzWMecAmPXiAPaOgKRAbNFIvXFKta7tDYQtCHJ7BcxjJYvdqmu2jIqrke95czbzb_aOPLiI3A4hdiTlvlawQn4mVGvxy5X1osUg');">
+                  </div>
+                  <div
+                    class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-md text-xs font-bold uppercase">
+                    Tech & Innovation</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-primary text-sm font-bold mb-2">
+                    <span class="material-symbols-outlined text-sm">calendar_today</span> Oct 24, 2024
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Global Tech Summit 2024</h3>
+                  <p class="text-slate-500 text-sm mb-6 line-clamp-2">The ultimate gathering for innovators and industry
+                    leaders in the heart of Silicon Valley.</p>
+                  <button
+                    class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white py-3 rounded-lg font-bold transition-all flex justify-center items-center gap-2">
+                    Register Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div
+                class="min-w-[350px] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-56 relative overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYe7dvyZouazDoPwLY2Ewu8PwvpEYyGC87KJyiZ73r93-IgtXuZyCMQw0XLTp0X8_eHpgtsFQUu_E3SK_6FV7yMdgk263pPQmv_YVQ9YcNC91kyh0HcGS2j9Cg_Qob9njHMviX0cWh4jOJ3dEzHF1zejPnTp46v7kwkanOaf-WYRCUOc9idQJ4V8Ulul5XLb7u4sMA7VITJEZZo4oI5yEoD8Egxa5QH24uBzAOTwj3N-C9Ltbp9IfCMQlmhfqtHwS5CRtgj280ICw');">
+                  </div>
+                  <div
+                    class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-md text-xs font-bold uppercase">
+                    Entertainment</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-primary text-sm font-bold mb-2">
+                    <span class="material-symbols-outlined text-sm">calendar_today</span> Nov 12, 2024
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Metro Music Festival</h3>
+                  <p class="text-slate-500 text-sm mb-6 line-clamp-2">Experience three days of legendary performances
+                    and underground discoveries.</p>
+                  <button
+                    class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white py-3 rounded-lg font-bold transition-all flex justify-center items-center gap-2">
+                    Register Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div
+                class="min-w-[350px] bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 transition-transform duration-300">
+                <div class="h-56 relative overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxz2H3nbOgJIjzEFlBh2xpp9ILrY5WUi0-bk9qlXL_iXScP3ZYU-w1OkieNvrjBXOWs3Ppn_NUEBoW2cLfseRt1lSc330wJT6JMzIHfIqVnHAvaqx3ROceNpuws17fZhX-S943tw0vSNO52EFCBghJgI6jHaA6h6e59F4jDoEtxSPYLF5M7ZEV1yOUsJK6LZEwu1WfDKm9ZnIQfzB-LFIvDIMW-RDiSqhHcj1N0JV2LUOgdNG2gowQAICvw2ET0eJqNAurCiE0TXY');">
+                  </div>
+                  <div
+                    class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-md text-xs font-bold uppercase">
+                    Corporate</div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center gap-2 text-primary text-sm font-bold mb-2">
+                    <span class="material-symbols-outlined text-sm">calendar_today</span> Dec 05, 2024
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Annual Charity Gala</h3>
+                  <p class="text-slate-500 text-sm mb-6 line-clamp-2">A black-tie evening dedicated to philanthropy,
+                    exquisite dining, and live auctions.</p>
+                  <button
+                    class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white py-3 rounded-lg font-bold transition-all flex justify-center items-center gap-2">
+                    Register Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Services Grid -->
+          <section class="bg-slate-950 text-white py-24">
+            <div class="max-w-7xl mx-auto px-6">
+              <div class="text-center mb-20">
+                <span class="text-accent-gold font-bold tracking-widest uppercase text-sm mb-4 block">What We Do</span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">Our Premium <span class="text-primary">Services</span>
+                </h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+              </div>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                  class="p-10 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:bg-white/[0.07] group">
+                  <div
+                    class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-primary text-4xl">favorite</span>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">Luxury Weddings</h3>
+                  <p class="text-slate-400 leading-relaxed mb-6">From destination locales to grand ballroom ceremonies,
+                    we handle every intimate detail for your special day.</p>
+                  <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </a>
+                </div>
+                <!-- Service 2 -->
+                <div
+                  class="p-10 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:bg-white/[0.07] group">
+                  <div
+                    class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-primary text-4xl">business_center</span>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">Corporate Galas</h3>
+                  <p class="text-slate-400 leading-relaxed mb-6">Professional planning for product launches, award
+                    ceremonies, and high-level executive retreats.</p>
+                  <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </a>
+                </div>
+                <!-- Service 3 -->
+                <div
+                  class="p-10 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:bg-white/[0.07] group">
+                  <div
+                    class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-primary text-4xl">theater_comedy</span>
+                  </div>
+                  <h3 class="text-2xl font-bold mb-4">Cultural Festivals</h3>
+                  <p class="text-slate-400 leading-relaxed mb-6">Immersive experiences celebrating arts, music, and
+                    community traditions on a massive scale.</p>
+                  <a class="text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                    Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Portfolio Teaser Section -->
+          <section class="py-24 max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+              <div class="lg:w-1/2">
+                <h2 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-8">Creating <span
+                    class="text-primary">Memories</span> That Last Forever</h2>
+                <p class="text-slate-500 text-lg mb-8 leading-relaxed">
+                  Our portfolio is a testament to our commitment to excellence. We don't just plan events; we create
+                  narratives and experiences that resonate long after the lights go down.
+                </p>
+                <div class="space-y-4 mb-10">
+                  <div class="flex items-start gap-4">
+                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <div>
+                      <h4 class="font-bold text-slate-900 dark:text-white">Award-Winning Team</h4>
+                      <p class="text-sm text-slate-500">Industry-recognized professionals with over 15 years of
+                        experience.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                    <div>
+                      <h4 class="font-bold text-slate-900 dark:text-white">Seamless Execution</h4>
+                      <p class="text-sm text-slate-500">Stress-free planning from initial concept to post-event wrap-up.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="bg-primary text-white px-10 py-4 rounded-lg font-black shadow-lg shadow-primary/30 active:scale-95">View
+                  Full Portfolio</button>
+              </div>
+              <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                <div class="space-y-4 pt-12">
+                  <div
+                    class="rounded-2xl overflow-hidden h-64 bg-cover bg-center hover:scale-105 transition-transform duration-500"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvj4JeIslsLMNqHHuJ-vikJpotJdl2nRs17DSkFTDpsqc2H2Pxm-3tWBAM0gsJgQfIrFSqWprsb5cEeenegA2BKS21aes1WI1vx84mJlsK80NFMfikTLCBUVTEObcDwYx2m1x7EvM4jqMzdEbe1TaYR0n9gNrhO4jHweZhezREU8_oTEnV1L7l_4RCUpjFgsTfu4lhE4_kCd6UbPlIi-SaKEi2i34eUQa7d1ymmVHFMKAY34J_EPrHJ5cIE5LLLcfEIuFL8etHtwM');">
+                  </div>
+                  <div
+                    class="rounded-2xl overflow-hidden h-48 bg-cover bg-center hover:scale-105 transition-transform duration-500"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlRJfbzLgpDh4TJj8ZKcc1N4IPvfkmSrKqIEXkOPnapdl47GcwMFN_VyzSkURAsA5Xv6bvuonDHogz8ceEQduEFXLXbTqbXJn_LZI_xlnII1RJ-vUBIUG0SRxXaEAMXxrK9W3an0p3KvuDmYty_Yoyme5yUZZZ2AQeqcZ7XSwIDTrEiGA9cZArJMwLLRd5zOg4DjpSsUa7M6zOff9EtiSIr9d886gM078j4K4wbQmruCI9VHJVtA9Q7XUoLygr1pFjc7PsCgQ11Ds');">
+                  </div>
+                </div>
+                <div class="space-y-4">
+                  <div
+                    class="rounded-2xl overflow-hidden h-48 bg-cover bg-center hover:scale-105 transition-transform duration-500"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAVl9serI3sjxGBE24dtatuzaUIE0tYVrFvnN59KRTy_my2YOqCwjX6zyijgpcJNfpYsMaBrNWeOP_lpRUwOaFKkgHJ39SVCuGMi1aLIsnjNEWknX3r1yTsKXaiAdfpCELFxd6uL9HbhZK5A2okCFDxMc8nF5HoEnIK42bmOaL6_DBuhTW5c0TrGKyvdYAYOdSpnf0O0Yee0bD-wGZSsZGhENR7lRiHkvFS7ppDPk8vKhcWSiACDgxAgHO1M1RBH-aeHgHKdIfPhzA');">
+                  </div>
+                  <div
+                    class="rounded-2xl overflow-hidden h-64 bg-cover bg-center hover:scale-105 transition-transform duration-500"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxmHk_Q3_36vXXvo9zcWQ5327l31Nxy9RE8p2K1UEi8cGsoDJ-MyrOi1L3xMpUvasBGGHKIH3MMLeuggSY0ooB3oauvvK_ninWzIgehwizkTxZhcc1AJCz3VP4eCZaqsCRyHdwCkVSFreXczJbOkzpPRDdd0db1lptlM9lX5auGN_UTHD5kcl-8hWwIqh3_euUUVFqPp-DGgUzckkYnKBN07Tw6K66XRw5lnO5VOO9ktWWzq6EVxmw3feFLxRqBtzjit1vHRkjlPU');">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-950 text-white pt-20 pb-10 border-t border-white/5">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-12 mb-20">
+              <div class="col-span-1 lg:col-span-1">
+                <div class="flex items-center gap-3 text-primary mb-8">
+                  <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                  <h2 class="text-white text-xl font-extrabold tracking-tight">ELITE EVENTS</h2>
+                </div>
+                <p class="text-slate-400 mb-8">Elevating experiences through meticulous design and flawless execution
+                  across the globe.</p>
+                <div class="flex gap-4">
+                  <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">public</span>
+                  </a>
+                  <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">camera_alt</span>
+                  </a>
+                  <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">alternate_email</span>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold mb-8">Our Services</h4>
+                <ul class="space-y-4 text-slate-400">
+                  <li><a class="hover:text-primary transition-all" href="#">Corporate Galas</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Luxury Weddings</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Product Launches</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Cultural Festivals</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">VIP Management</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold mb-8">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                  <li><a class="hover:text-primary transition-all" href="#">About Us</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Our Portfolio</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Latest News</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Careers</a></li>
+                  <li><a class="hover:text-primary transition-all" href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold mb-8">Newsletter</h4>
+                <p class="text-slate-400 mb-6">Subscribe for exclusive event invitations and industry insights.</p>
+                <form class="flex gap-2">
+                  <input
+                    class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 flex-1 focus:ring-1 focus:ring-primary focus:border-primary"
+                    placeholder="Your Email" type="email" />
+                  <button class="bg-primary px-4 rounded-lg hover:bg-primary/90 transition-all">
+                    <span class="material-symbols-outlined">send</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+              <p>© 2026 Elite Events Management. All rights reserved.</p>
+              <div class="flex gap-8 mt-4 md:mt-0">
+                <a class="hover:text-white" href="#">Privacy Policy</a>
+                <a class="hover:text-white" href="#">Terms of Service</a>
+                <a class="hover:text-white" href="#">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

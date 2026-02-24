@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Our Services | Elite Events</title>
+    <title>Our Services | Elite Events Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
     <link
@@ -18,10 +18,8 @@
                 extend: {
                     colors: {
                         "primary": "#9213ec",
-                        "primary-light": "#f3e8ff",
+                        "primary-dark": "#7b10c9",
                         "background-light": "#ffffff",
-                        "text-grey": "#64748b",
-                        "card-bg": "#f8fafc"
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -34,221 +32,211 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        .step-num {
-            -webkit-text-stroke: 1px #9213ec;
-            color: transparent;
-        }
     </style>
 </head>
 
 <body class="bg-white text-slate-900 font-sans">
-    <!-- Header -->
+    <!-- Navigation -->
     <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div class="flex items-center gap-10">
-            <div class="flex items-center gap-2 text-primary">
-                <span class="material-symbols-outlined text-3xl">event_seat</span>
-                <span class="text-xl font-black tracking-tight uppercase">Elite Events</span>
-            </div>
-            <nav class="hidden lg:flex items-center gap-8">
-                <a href="index.html"
-                    class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Home</a>
-                <a href="events.html"
-                    class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">Events</a>
-                <a href="services.html" class="text-sm font-semibold text-primary">Services</a>
-                <a href="#" class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors">About</a>
-            </nav>
+        <div class="flex items-center gap-2 text-primary">
+            <span class="material-symbols-outlined text-2xl">auto_awesome</span>
+            <span class="text-lg font-black tracking-tight text-slate-800">Elite Events Agency</span>
         </div>
-
-        <div class="flex items-center gap-4 flex-1 justify-end">
-            <div class="relative w-full max-w-sm ml-10">
+        <nav class="hidden lg:flex items-center gap-8">
+            <a href="index.html" class="text-xs font-bold text-slate-600 hover:text-primary transition-colors">Home</a>
+            <a href="services.html" class="text-xs font-bold text-primary">Services</a>
+            <a href="#" class="text-xs font-bold text-slate-600 hover:text-primary transition-colors">Portfolio</a>
+            <a href="#" class="text-xs font-bold text-slate-600 hover:text-primary transition-colors">About</a>
+            <a href="#" class="text-xs font-bold text-slate-600 hover:text-primary transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <div class="relative hidden md:block">
                 <span
                     class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
                 <input type="text" placeholder="Search services..."
-                    class="w-full bg-[#f3f0ff] border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-1 focus:ring-primary/20 outline-none">
+                    class="bg-slate-100 border-none rounded-lg pl-10 pr-4 py-2 text-xs w-48 focus:ring-1 focus:ring-primary/20 outline-none">
             </div>
             <button
-                class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">
-                Sign In
+                class="bg-primary text-white px-6 py-2 rounded-lg font-bold text-xs hover:bg-primary-dark transition-colors">
+                Book Con...
             </button>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-12">
+    <main class="max-w-7xl mx-auto px-6 py-4">
         <!-- Hero Section -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl font-black text-slate-900 mb-6 leading-tight">Elite Services</h1>
-                <p class="text-slate-500 text-lg leading-relaxed">
-                    Elevating your vision through meticulous planning, innovative design, and flawless execution for any
-                    occasion.
+        <section class="relative h-[450px] rounded-3xl overflow-hidden mb-20">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: linear-gradient(rgba(26, 16, 34, 0.7), rgba(26, 16, 34, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDY6Fsub4gR6q6TORWqCZTPRyd42y6Gyh1vjafutPqd6nRYpnP9E8jJvcNOCFNnFRxmrYXCyRoX0NQH2JckkdLJLI8rO3nClVepiaTUWCesAy01TXnhZDkeNiQlyrBBjQHvqHAPv9R8xDpDB3jU9teSp1BMfxfAKVwW3YEgNe_IAU8IwN6vTTwP-Gq2TFOu60L36NqjmzCEDSgCX_5Xu6ndPPSshffmlaylnE1b5vZr3jUEhrIbeTfEwQTPGd2cEQLFXek0Sls3pf8');">
+            </div>
+            <div class="relative h-full flex flex-col items-center justify-center text-center px-6">
+                <h1 class="text-5xl font-black text-white mb-6">Our Areas of Expertise</h1>
+                <p class="text-slate-200 text-lg max-w-2xl mb-10 leading-relaxed font-medium">
+                    Crafting unforgettable experiences through strategic planning, innovative design, and flawless
+                    execution for every occasion.
                 </p>
+                <div class="flex gap-4">
+                    <button
+                        class="bg-primary text-white px-8 py-3 rounded-lg font-black shadow-lg shadow-primary/30">Get a
+                        Quote</button>
+                    <button
+                        class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-3 rounded-lg font-black hover:bg-white/20">Our
+                        Process</button>
+                </div>
             </div>
-            <div class="flex flex-wrap gap-3">
-                <button
-                    class="bg-primary text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg shadow-primary/20">All
-                    Services</button>
-                <button
-                    class="bg-[#f1f1f1] text-slate-600 px-6 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition-all">Planning</button>
-                <button
-                    class="bg-[#f1f1f1] text-slate-600 px-6 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition-all">Design</button>
-                <button
-                    class="bg-[#f1f1f1] text-slate-600 px-6 py-2 rounded-full text-sm font-semibold hover:bg-slate-200 transition-all">Management</button>
-            </div>
-        </div>
+        </section>
 
-        <!-- Expertise Grid (Replica Style) -->
+        <!-- Service Portfolio -->
         <section class="mb-24">
-            <div class="flex items-center gap-3 mb-10">
-                <span class="material-symbols-outlined text-primary text-2xl">star</span>
-                <h2 class="text-2xl font-bold text-slate-900">Our Expertise</h2>
-            </div>
+            <h2 class="text-2xl font-black text-slate-900 mb-2">Premium Service Portfolio</h2>
+            <div class="w-16 h-1 bg-primary mb-12"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group transition-all">
-                    <div class="relative aspect-[4/3] overflow-hidden">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvj4JeIslsLMNqHHuJ-vikJpotJdl2nRs17DSkFTDpsqc2H2Pxm-3tWBAM0gsJgQfIrFSqWprsb5cEeenegA2BKS21aes1WI1vx84mJlsK80NFMfikTLCBUVTEObcDwYx2m1x7EvM4jqMzdEbe1TaYR0n9gNrhO4jHweZhezREU8_oTEnV1L7l_4RCUpjFgsTfu4lhE4_kCd6UbPlIi-SaKEi2i34eUQa7d1ymmVHFMKAY34J_EPrHJ5cIE5LLLcfEIuFL8etHtwM"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-1 flex flex-col items-center shadow-lg">
-                            <span class="text-[10px] font-black uppercase text-slate-900 leading-tight">Tier</span>
-                            <span class="text-xl font-black text-slate-900 leading-tight">01</span>
-                        </div>
-                        <div
-                            class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase px-2 py-1 rounded tracking-wider">
-                            Weddings</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1: Corporate Events -->
+                <div class="relative group rounded-2xl overflow-hidden aspect-[4/3]">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2LfoVoAoGj8ofxwWNUAA5lcy9K8mLxo5gFEWY2uodn1XGF0-jJ2ms3YzcQWZGHaATZ2CyK7QlVRChV6b9yzlcszlgJZyGooQWkKstO7zELvD3B5D0MSYMPTw6a8YRYJ7vk7V0tRmErgH9vuo_fApLELngNlomH6JyaohuAbeVVfAZgMY2DII2E745tWVBUmnSHSQoxjbrC4KsJjrB6vOEJDGP2zpHMOg761gf1G9iuoV9-P3FPmpPwtHK4mGSecIboKHS3YRiZPQ');">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
-                            Luxury Wedding Planning</h3>
-                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">Complete end-to-end planning for weddings
-                            that define elegance and leave lasting impressions.</p>
-                        <div class="grid grid-cols-2 gap-3">
-                            <button
-                                class="border border-primary text-primary font-bold py-2.5 rounded-lg text-sm hover:bg-primary/5 transition-all">Learn
-                                More</button>
-                            <button
-                                class="bg-primary text-white font-bold py-2.5 rounded-lg text-sm hover:opacity-90 shadow-lg shadow-primary/20 transition-all">Book
-                                Now</button>
+                    <div class="relative h-full flex flex-col justify-end p-8">
+                        <div class="flex items-center gap-2 text-primary mb-4">
+                            <span class="material-symbols-outlined text-sm">business_center</span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-white">B2B
+                                Solutions</span>
                         </div>
+                        <h3 class="text-3xl font-black text-white mb-3">Corporate Events</h3>
+                        <p class="text-slate-300 text-sm max-w-sm mb-6">From high-stakes product launches to
+                            international conferences, we handle the logistics so you can focus on your business goals.
+                        </p>
+                        <button
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-xs w-fit hover:bg-primary-dark shadow-xl">View
+                            Service Details</button>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group transition-all">
-                    <div class="relative aspect-[4/3] overflow-hidden">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYe7dvyZouazDoPwLY2Ewu8PwvpEYyGC87KJyiZ73r93-IgtXuZyCMQw0XLTp0X8_eHpgtsFQUu_E3SK_6FV7yMdgk263pPQmv_YVQ9YcNC91kyh0HcGS2j9Cg_Qob9njHMviX0cWh4jOJ3dEzHF1zejPnTp46v7kwkanOaf-WYRCUOc9idQJ4V8Ulul5XLb7u4sMA7VITJEZZo4oI5yEoD8Egxa5QH24uBzAOTwj3N-C9Ltbp9IfCMQlmhfqtHwS5CRtgj280ICw"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-1 flex flex-col items-center shadow-lg">
-                            <span class="text-[10px] font-black uppercase text-slate-900 leading-tight">Tier</span>
-                            <span class="text-xl font-black text-slate-900 leading-tight">02</span>
-                        </div>
-                        <div
-                            class="absolute top-4 right-4 bg-[#1e40af] text-white text-[10px] font-black uppercase px-2 py-1 rounded tracking-wider">
-                            Corporate</div>
+                <!-- Card 2: Bespoke Weddings -->
+                <div class="relative group rounded-2xl overflow-hidden aspect-[4/3]">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYSBPYdjXtBblOf1YI7x1tl9MXusADAZKtaD9yPuwZ_83zmAwDAFIkc8XBnPtOa8uhib7lTo6o7MeP4K6-rd-N0C3f1lRWE7MrhXRAEJ3wsf92I58tKEYMgMq3CR3aIuIzTOlv1TLpuduEUrRsvZbOYCEPvLvfoKB0ALBPoWCUiwLxG2qtllXJZxAIs1tuXDwQRbDXlP61lBOw87k2WUkqNq2tnVp1iH-LG8A8r4vCrxNUXFEsQx9VShka1CXZzRJpNQaptn094oY');">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
-                            Corporate Event Design</h3>
-                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">Innovative themes and branding integration
-                            for summits, galas, and product launches.</p>
-                        <div class="grid grid-cols-2 gap-3">
-                            <button
-                                class="border border-primary text-primary font-bold py-2.5 rounded-lg text-sm hover:bg-primary/5 transition-all">Learn
-                                More</button>
-                            <button
-                                class="bg-primary text-white font-bold py-2.5 rounded-lg text-sm hover:opacity-90 shadow-lg shadow-primary/20 transition-all">Book
-                                Now</button>
+                    <div class="relative h-full flex flex-col justify-end p-8">
+                        <div class="flex items-center gap-2 text-primary mb-4">
+                            <span class="material-symbols-outlined text-sm">favorite</span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-white">Personal
+                                Celebrations</span>
                         </div>
+                        <h3 class="text-3xl font-black text-white mb-3">Bespoke Weddings</h3>
+                        <p class="text-slate-300 text-sm max-w-sm mb-6">We turn your vision of a perfect day into a
+                            reality with meticulous attention to floral design, atmosphere, and seamless coordination.
+                        </p>
+                        <button
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-xs w-fit hover:bg-primary-dark shadow-xl">View
+                            Service Details</button>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div
-                    class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 group transition-all">
-                    <div class="relative aspect-[4/3] overflow-hidden">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC3_7wQtMQYsDg6ivDp7nQvaRsAH1EuITT6AP5YdED9sK7V9AxkckSNFPKZffQVxKOV4YSsdBD0iZI4Z_sUt8h-p2KSbe54sx7dBPQHJ5SJ5BryPsGMsMGnzBc5k5xXzinmj9ZrTSrMw2falvQwaCM6oJz3Nr8vA2h5lioBcSogMZj38n7TCoMJjH2J0iiBtVACIk4SqlQfiMKqQU2y4dD8afRd30hoBfMxX9r5Cxcp8Zsrtz07N4ob7IWZMpTqIr2s_15_whK0Oo"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div
-                            class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-1 flex flex-col items-center shadow-lg">
-                            <span class="text-[10px] font-black uppercase text-slate-900 leading-tight">Tier</span>
-                            <span class="text-xl font-black text-slate-900 leading-tight">03</span>
-                        </div>
-                        <div
-                            class="absolute top-4 right-4 bg-[#f59e0b] text-white text-[10px] font-black uppercase px-2 py-1 rounded tracking-wider">
-                            Cultural</div>
+                <!-- Card 3: Product Launches -->
+                <div class="relative group rounded-2xl overflow-hidden aspect-[4/3]">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQYce7m2BhsWm5siu_X0fG9tatwBERuJagH1zl1_XNd1kTrzZLknE2QhQ97BDM0rPKxptvAMzMCwzQ2IsDmM1wgf0cVIyThTX-9gNPs-PQPQj7x5pdq_-M8bfxMoGhsLvxbsaR-kczt_LGZsVHj9wgWm2Kj2yme7IL6CsOcMJJ7_785xvZJd3VeVqSgqKY5BJDtsx7dGk6CUjoYZrIIq8xMif4qAVPLcutxIrFSgYk6YwD6QRSwnmBCz2PIuivJnQCRxCvKJBSNmc');">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">
-                            Cultural Festival Management</h3>
-                        <p class="text-slate-500 text-sm mb-6 line-clamp-2">Large-scale logistics and programming for
-                            immersive community and arts festivals.</p>
-                        <div class="grid grid-cols-2 gap-3">
-                            <button
-                                class="border border-primary text-primary font-bold py-2.5 rounded-lg text-sm hover:bg-primary/5 transition-all">Learn
-                                More</button>
-                            <button
-                                class="bg-primary text-white font-bold py-2.5 rounded-lg text-sm hover:opacity-90 shadow-lg shadow-primary/20 transition-all">Book
-                                Now</button>
+                    <div class="relative h-full flex flex-col justify-end p-8">
+                        <div class="flex items-center gap-2 text-primary mb-4">
+                            <span class="material-symbols-outlined text-sm">campaign</span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-white">Brand
+                                Impact</span>
                         </div>
+                        <h3 class="text-3xl font-black text-white mb-3">Product Launches</h3>
+                        <p class="text-slate-300 text-sm max-w-sm mb-6">High-impact production designed to capture media
+                            attention and leave a lasting impression on your target audience.</p>
+                        <button
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-xs w-fit hover:bg-primary-dark shadow-xl">View
+                            Service Details</button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Social Galas -->
+                <div class="relative group rounded-2xl overflow-hidden aspect-[4/3]">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAC3_7wQtMQYsDg6ivDp7nQvaRsAH1EuITT6AP5YdED9sK7V9AxkckSNFPKZffQVxKOV4YSsdBD0iZI4Z_sUt8h-p2KSbe54sx7dBPQHJ5SJ5BryPsGMsMGnzBc5k5xXzinmj9ZrTSrMw2falvQwaCM6oJz3Nr8vA2h5lioBcSogMZj38n7TCoMJjH2J0iiBtVACIk4SqlQfiMKqQU2y4dD8afRd30hoBfMxX9r5Cxcp8Zsrtz07N4ob7IWZMpTqIr2s_15_whK0Oo');">
+                    </div>
+                    <div class="relative h-full flex flex-col justify-end p-8">
+                        <div class="flex items-center gap-2 text-primary mb-4">
+                            <span class="material-symbols-outlined text-sm">theater_comedy</span>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-white">Public
+                                Events</span>
+                        </div>
+                        <h3 class="text-3xl font-black text-white mb-3">Cultural & Social Galas</h3>
+                        <p class="text-slate-300 text-sm max-w-sm mb-6">Orchestrating large-scale cultural celebrations
+                            that require complex stage management and crowd coordination.</p>
+                        <button
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-xs w-fit hover:bg-primary-dark shadow-xl">View
+                            Service Details</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Planning Process (Added Value) -->
-        <hr class="border-slate-100 mb-24">
-
-        <section class="mb-32">
-            <div class="flex items-center gap-3 mb-16">
-                <span class="material-symbols-outlined text-slate-400 text-2xl">architecture</span>
-                <h2 class="text-2xl font-bold text-slate-900">Our Signature Process</h2>
+        <!-- CTA Section -->
+        <section
+            class="bg-purple-50 rounded-3xl p-12 mb-20 flex flex-col md:flex-row items-center justify-between gap-8 border border-purple-100">
+            <div>
+                <h2 class="text-3xl font-black text-slate-900 mb-4">Ready to plan your next masterpiece?</h2>
+                <p class="text-slate-500 font-medium">Our consultants are available for a discovery call to discuss your
+                    specific needs.</p>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                <div class="relative">
-                    <div class="step-num text-7xl font-black mb-4 opacity-30 italic absolute -top-8 -left-2">01</div>
-                    <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Discovery</h3>
-                    <p class="text-slate-500 text-sm">We begin with a deep dive into your vision and objectives.</p>
-                </div>
-                <div class="relative">
-                    <div class="step-num text-7xl font-black mb-4 opacity-30 italic absolute -top-8 -left-2">02</div>
-                    <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Strategy</h3>
-                    <p class="text-slate-500 text-sm">Developing a detailed roadmap and creative concept.</p>
-                </div>
-                <div class="relative">
-                    <div class="step-num text-7xl font-black mb-4 opacity-30 italic absolute -top-8 -left-2">03</div>
-                    <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Design</h3>
-                    <p class="text-slate-500 text-sm">Visualizing the aesthetics and attendee experience.</p>
-                </div>
-                <div class="relative">
-                    <div class="step-num text-7xl font-black mb-4 opacity-30 italic absolute -top-8 -left-2">04</div>
-                    <h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">Execution</h3>
-                    <p class="text-slate-500 text-sm">Flawless on-site management of every minute detail.</p>
-                </div>
-            </div>
+            <button
+                class="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25">Contact
+                Us Today</button>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer
-        class="max-w-7xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between border-t border-slate-100 gap-6">
-        <div class="flex items-center gap-2 text-primary">
-            <span class="material-symbols-outlined text-2xl">event_seat</span>
-            <span class="text-sm font-black uppercase tracking-widest text-[#1a1a1a]">Elite Events</span>
+    <footer class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-100">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-2 text-primary mb-6">
+                    <span class="material-symbols-outlined text-2xl">auto_awesome</span>
+                    <span class="text-lg font-black tracking-tight text-slate-800 uppercase">Elite Events Agency</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">Leading the industry in innovative
+                    event solutions and premium production standards since 2010.</p>
+            </div>
+            <div>
+                <h4 class="text-sm font-black text-slate-900 uppercase tracking-widest mb-6">Services</h4>
+                <ul class="space-y-4 text-slate-500 text-[13px] font-semibold">
+                    <li><a href="#" class="hover:text-primary transition-colors">Corporate</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Weddings</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Social</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-black text-slate-900 uppercase tracking-widest mb-6">Company</h4>
+                <ul class="space-y-4 text-slate-500 text-[13px] font-semibold">
+                    <li><a href="#" class="hover:text-primary transition-colors">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-black text-slate-900 uppercase tracking-widest mb-6">Contact</h4>
+                <ul class="space-y-4 text-slate-500 text-[13px] font-semibold">
+                    <li>123 Event St, Manhattan, NY</li>
+                    <li><a href="mailto:hello@elite-events.com" class="hover:text-primary">hello@elite-events.com</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <p class="text-xs text-slate-400 font-medium">© 2024 Elite Events Agency. All rights reserved.</p>
-        <div class="flex gap-4">
-            <span
-                class="material-symbols-outlined text-slate-400 text-xl cursor-pointer hover:text-primary">award_star</span>
-            <span
-                class="material-symbols-outlined text-slate-400 text-xl cursor-pointer hover:text-primary">home_app_fill</span>
-            <span
-                class="material-symbols-outlined text-slate-400 text-xl cursor-pointer hover:text-primary">alternate_email</span>
+        <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-slate-50 gap-4">
+            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">© 2024 Elite Events Agency. All
+                rights reserved. Professional Event Management.</p>
+            <div class="flex gap-6">
+                <span
+                    class="material-symbols-outlined text-slate-300 text-xl cursor-pointer hover:text-primary">award_star</span>
+                <span
+                    class="material-symbols-outlined text-slate-300 text-xl cursor-pointer hover:text-primary">home_app_fill</span>
+                <span
+                    class="material-symbols-outlined text-slate-300 text-xl cursor-pointer hover:text-primary">alternate_email</span>
+            </div>
         </div>
     </footer>
 
